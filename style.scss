@@ -173,6 +173,7 @@ h1 {
 .demo-content {
   display: flex;
   flex-wrap: wrap;
+  padding: 20px 0;
 }
 
 .circle {
@@ -184,4 +185,35 @@ h1 {
   text-align: center;
   line-height: 200px;
   margin: 20px;
+}
+
+.slide-down {
+  cursor: pointer;
+  width: 200px;
+
+  h4 {
+    background-color: royalblue;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: lighten(royalblue, 10%);
+    }
+  }
+
+  .drop-list {
+    background-color: royalblue;
+    color: white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+
+    li {
+      padding: 5px 10px;
+    }
+  }
 }

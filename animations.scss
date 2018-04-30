@@ -7,3 +7,7 @@
 .elr-spin-4s {
   @include elr-spin($config: (speed: 4s));
 }
+
+.elr-slide {
+  @include elr-slide;
+}
