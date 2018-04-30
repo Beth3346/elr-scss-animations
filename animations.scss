@@ -1,0 +1,9 @@
+@import 'src/main';
+
+.elr-spin {
+  @include elr-spin;
+}
+
+.elr-spin-4s {
+  @include elr-spin($config: (speed: 4s));
+}

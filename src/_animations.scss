@@ -1,33 +1,35 @@
-@mixin elr-spin() {
-    animation: spinAround 9s linear infinite;
+@mixin elr-spin($config: ()) {
+  $config:extend((speed: 9s), $config);
 
-    @keyframes spinAround {
-        from {
-            transform: rotate(0deg);
-        }
+  $speed: map-get($config, speed);
 
-        to {
-            transform: rotate(360deg);
-        }
+  animation: spinAround $speed linear infinite;
+
+  @keyframes spinAround {
+    from {
+      transform: rotate(0deg);
     }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
 }
 
 @mixin elr-slide($config: ()) {
-    $config: extend((
-        final-height: 500px
-    ), $config);
+  $config:extend((final-height: 500px), $config);
 
-    $final-height: map-get($config, final-height);
+  $final-height: map-get($config, final-height);
 
-    // cursor: pointer;
-    max-height: 0;
-    visibility: hidden;
-    overflow: hidden;
-    transition: max-height .5s cubic-bezier(0, 1.05, 0, 1), visibility .2s;
+  // cursor: pointer;
+  max-height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0, 1.05, 0, 1), visibility 0.2s;
 
-    &.active {
-        max-height: to-rems($final-height);
-        visibility: visible;
-        transition: max-height .5s ease-in;
-    }
+  &.active {
+    max-height: to-rems($final-height);
+    visibility: visible;
+    transition: max-height 0.5s ease-in;
+  }
 }
