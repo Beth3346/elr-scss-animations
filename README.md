@@ -1,8 +1,8 @@
-# elr-scss-accordion
+# elr-scss-animations
 
-[![Build Status](https://travis-ci.org/Beth3346/elr-scss-accordion.svg?branch=master)](https://travis-ci.org/Beth3346/elr-scss-accordion)
+[![Build Status](https://travis-ci.org/Beth3346/elr-scss-animations.svg?branch=master)](https://travis-ci.org/Beth3346/elr-scss-animations)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![npm](https://img.shields.io/npm/dm/elr-scss-accordion.svg?style=flat)]()
+[![npm](https://img.shields.io/npm/dm/elr-scss-animations.svg?style=flat)]()
 
 a library of sass mixins
 
@@ -11,17 +11,14 @@ a library of sass mixins
 Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't already.
 
 ```sh
-npm install elr-scss-accordion --save
+npm install elr-scss-animations --save
 ```
-
-
 
 ## Dependencies
 
 None
 
 ## Dev Dependencies
-
 
 None
 
