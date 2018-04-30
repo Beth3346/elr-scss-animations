@@ -11,3 +11,11 @@
 .elr-slide {
   @include elr-slide;
 }
+
+.elr-fade-out {
+  @include elr-fade();
+}
+
+.elr-fade-in {
+  @include elr-fade($config: (type: show));
+}
