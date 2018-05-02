@@ -176,15 +176,65 @@ h1 {
   padding: 20px 0;
 }
 
+.demo-box {
+  position: relative;
+  background-color: royalblue;
+  padding: 20px;
+  margin: 20px;
+  z-index: 0;
+
+  > p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 1;
+  }
+
+  .elr-fade-item {
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    color: royalblue;
+  }
+}
+
 .circle {
   background-color: royalblue;
+  color: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  text-align: center;
+  line-height: 200px;
+  margin: 20px;
+}
+
+.elr-flipper-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+
+.elr-flipper-front {
+  color: white;
+  background-color: royalblue;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  text-align: center;
+  line-height: 200px;
+}
+
+.elr-flipper-back {
+  background-color: pink;
   width: 200px;
   height: 200px;
   border-radius: 100px;
   color: white;
   text-align: center;
   line-height: 200px;
-  margin: 20px;
 }
 
 .slide-down {

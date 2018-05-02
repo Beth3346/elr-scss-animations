@@ -19,3 +19,7 @@
 .elr-fade-in {
   @include elr-fade($config: (type: show));
 }
+
+.elr-flipper {
+  @include elr-flipper;
+}
