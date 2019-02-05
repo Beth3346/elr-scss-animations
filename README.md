@@ -23,6 +23,10 @@ yarn add elr-scss-animations
 
 ## Usage
 
+### elr-fade
+
+the elr-fade mixin shows and hides an element on hover.
+
 ```scss
 @import '~elr-scss-animations/src/fade';
 
@@ -52,6 +56,12 @@ yarn add elr-scss-animations
   </div>
 </div>
 ```
+
+### elr-spin
+
+### elr-flipper
+
+### elr-slide
 
 ## License
 
