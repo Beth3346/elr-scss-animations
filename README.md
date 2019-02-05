@@ -61,6 +61,31 @@ the elr-fade mixin shows and hides an element on hover.
 
 ### elr-flipper
 
+```scss
+@import '~elr-scss-animations/src/flipper';
+
+.elr-flipper {
+  @include elr-flipper;
+}
+```
+
+```html
+<div class="elr-flipper">
+  <div
+    class="elr-flipper-container elr-flipper-circle-container"
+    role="button"
+    aria-pressed="false"
+  >
+    <div class="elr-flipper-front elr-flipper-circle-front">
+      <p>Click Here</p>
+    </div>
+    <div class="elr-flipper-back elr-flipper-circle-back">
+      <p>This is some circle content</p>
+    </div>
+  </div>
+</div>
+```
+
 ### elr-slide
 
 ## License
