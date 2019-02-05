@@ -5,7 +5,11 @@
 }
 
 .elr-spin-4s {
-  @include elr-spin($config: (speed: 4s));
+  @include elr-spin(
+    $config: (
+      speed: 4s
+    )
+  );
 }
 
 .elr-slide {
@@ -17,7 +21,11 @@
 }
 
 .elr-fade-in {
-  @include elr-fade($config: (type: show));
+  @include elr-fade(
+    $config: (
+      type: show
+    )
+  );
 }
 
 .elr-flipper {

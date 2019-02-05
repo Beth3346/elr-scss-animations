@@ -33,6 +33,7 @@
     "url": "https://github.com/Beth3346/elr-scss-animations.git"
   },
   "dependencies": {
+    "@babel/register": "^7.0.0",
     "babel-runtime": "^6.26.0",
     "elr-scss-animations": "0.0.1",
     "elr-scss-functions": "0.1.2"

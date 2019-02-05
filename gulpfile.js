@@ -1,11 +1,11 @@
-import gulp from 'gulp';
-import path from 'path';
-import sass from 'gulp-sass';
-import scsslint from 'gulp-scss-lint';
-import plumber from 'gulp-plumber';
-import autoprefixer from 'gulp-autoprefixer';
-import cleanCSS from 'gulp-clean-css';
-import babel from 'gulp-babel';
+const gulp = require('gulp');
+const path = require('path');
+const sass = require('gulp-sass');
+const scsslint = require('gulp-scss-lint');
+const plumber = require('gulp-plumber');
+const autoprefixer = require('gulp-autoprefixer');
+const cleanCSS = require('gulp-clean-css');
+const babel = require('gulp-babel');
 
 var paths = {
   app: 'dist/',

@@ -14,11 +14,38 @@ Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't 
 npm install elr-scss-animations --save
 ```
 
-## Dependencies
+## Usage
 
-None
+```scss
+@import '~elr-scss-functions/main';
+@import '~elr-scss-animations/src/fade';
 
-## Dev Dependencies
+.elr-fade-out {
+  @include elr-fade();
+}
+
+.elr-fade-in {
+  @include elr-fade(
+    $config: (
+      type: show
+    )
+  );
+}
+```
+
+```html
+<div class="elr-fade-in">
+  <div class="elr-fade-item box">
+    <p>Now you can see me</p>
+  </div>
+</div>
+
+<div class="elr-fade-out">
+  <div class="elr-fade-item box">
+    <p>Now you can see me</p>
+  </div>
+</div>
+```
 
 None
 

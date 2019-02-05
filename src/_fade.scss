@@ -1,5 +1,13 @@
+@import 'node_modules/elr-scss-functions/main';
+
 @mixin elr-fade($config: ()) {
-  $config:extend((type: 'hide', speed: 0.3s), $config);
+  $config: extend(
+    (
+      type: 'hide',
+      speed: 0.3s
+    ),
+    $config
+  );
 
   $type: map-get($config, type);
   $speed: map-get($config, speed);
