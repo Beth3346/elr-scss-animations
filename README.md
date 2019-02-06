@@ -89,6 +89,12 @@ the elr-fade mixin shows and hides an element on hover.
 - If the element with class 'elr-slide' has the active class it is visible.
 - You must implement the active class toggle event yourself using JavaScript
 
+```scss
+.elr-slide {
+  @include elr-slide;
+}
+```
+
 ```html
 <div>
   <h4>Slide Down</h4>
