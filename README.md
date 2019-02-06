@@ -4,10 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![npm](https://img.shields.io/npm/dm/elr-scss-animations.svg?style=flat)]()
 
-- Smoothly transition elements in and out of view
-- Slide down
-- Rotate
-- Flip
+- Scss Mixin library for animations
 
 ## Installation
 
@@ -61,10 +58,9 @@ the elr-fade mixin shows and hides an element on hover.
 
 ### elr-flipper
 
-The elr-flipper mixin adds an 'active' class to an element to create a 'flip' effect.
-If the element with class 'elr-flipper-container' has the active class the element with the class of 'elr-flipper-back' is visible.
-
-You must implement the active class toggle event yourself.
+- The elr-flipper mixin adds an 'active' class to an element to create a 'flip' effect.
+- If the element with class 'elr-flipper-container' has the active class the element with the class of 'elr-flipper-back' is visible.
+- You must implement the active class toggle event yourself using JavaScript
 
 ```scss
 @import '~elr-scss-animations/src/flipper';
@@ -76,22 +72,34 @@ You must implement the active class toggle event yourself.
 
 ```html
 <div class="elr-flipper">
-  <div
-    class="elr-flipper-container active elr-flipper-circle-container"
-    role="button"
-    aria-pressed="true"
-  >
-    <div class="elr-flipper-front elr-flipper-circle-front">
+  <div class="elr-flipper-container active" role="button" aria-pressed="true">
+    <div class="elr-flipper-front">
       <p>Click Here</p>
     </div>
-    <div class="elr-flipper-back elr-flipper-circle-back">
-      <p>This is some circle content</p>
+    <div class="elr-flipper-back">
+      <p>This is some content</p>
     </div>
   </div>
 </div>
 ```
 
 ### elr-slide
+
+- The elr-slide mixin adds an 'active' class to an element to create a 'slide down' effect.
+- If the element with class 'elr-slide' has the active class it is visible.
+- You must implement the active class toggle event yourself using JavaScript
+
+```html
+<div>
+  <h4>Slide Down</h4>
+  <ul class="elr-slide">
+    <li>Item One</li>
+    <li>Item Two</li>
+    <li>Item Three</li>
+    <li>Item Four</li>
+  </ul>
+</div>
+```
 
 ## License
 

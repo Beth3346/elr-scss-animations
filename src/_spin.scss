@@ -1,0 +1,24 @@
+@import 'node_modules/elr-scss-functions/main';
+
+@mixin elr-spin($config: ()) {
+  $config: extend(
+    (
+      speed: 9s
+    ),
+    $config
+  );
+
+  $speed: map-get($config, speed);
+
+  animation: spinAround $speed linear infinite;
+
+  @keyframes spinAround {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
