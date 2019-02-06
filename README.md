@@ -61,6 +61,11 @@ the elr-fade mixin shows and hides an element on hover.
 
 ### elr-flipper
 
+The elr-flipper mixin adds an 'active' class to an element to create a 'flip' effect.
+If the element with class 'elr-flipper-container' has the active class the element with the class of 'elr-flipper-back' is visible.
+
+You must implement the active class toggle event yourself.
+
 ```scss
 @import '~elr-scss-animations/src/flipper';
 
@@ -72,9 +77,9 @@ the elr-fade mixin shows and hides an element on hover.
 ```html
 <div class="elr-flipper">
   <div
-    class="elr-flipper-container elr-flipper-circle-container"
+    class="elr-flipper-container active elr-flipper-circle-container"
     role="button"
-    aria-pressed="false"
+    aria-pressed="true"
   >
     <div class="elr-flipper-front elr-flipper-circle-front">
       <p>Click Here</p>
