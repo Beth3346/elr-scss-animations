@@ -15,8 +15,8 @@
   text-rendering: optimizeLegibility;
 }
 
-:before,
-:after {
+::before,
+::after {
   box-sizing: border-box;
 }
 
@@ -94,20 +94,20 @@ q {
   quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
   content: '';
 }
 
-/* remember to define focus styles! */
+// remember to define focus styles!
 :focus {
   outline: 0;
   text-decoration: none;
 }
 
-/* remember to highlight inserts somehow! */
+// remember to highlight inserts somehow!
 ins {
   text-decoration: none;
 }
@@ -120,12 +120,12 @@ del {
   text-decoration: line-through;
 }
 
-/* set img max-width */
+// set img max-width
 img {
   height: auto;
 }
 
-/* ie 8 img max-width */
+// ie 8 img max-width
 @media \0screen {
   img {
     width: auto;
@@ -140,7 +140,7 @@ body {
   background-color: #fff;
 }
 
-/* add html5 compatibilty */
+// add html5 compatibilty
 
 main,
 article,
@@ -178,7 +178,7 @@ h1 {
 
 .demo-box {
   position: relative;
-  background-color: royalblue;
+  background-color: #4169e1;
   padding: 20px;
   margin: 20px;
   z-index: 0;
@@ -188,21 +188,21 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #fff;
     z-index: 1;
   }
 
   .elr-fade-item {
     position: relative;
     z-index: 2;
-    background-color: white;
-    color: royalblue;
+    background-color: #fff;
+    color: #4169e1;
   }
 }
 
 .circle {
-  background-color: royalblue;
-  color: white;
+  background-color: #4169e1;
+  color: #fff;
   width: 200px;
   height: 200px;
   border-radius: 100px;
@@ -218,8 +218,8 @@ h1 {
 }
 
 .elr-flipper-front {
-  color: white;
-  background-color: royalblue;
+  color: #fff;
+  background-color: #4169e1;
   width: 200px;
   height: 200px;
   border-radius: 100px;
@@ -228,11 +228,11 @@ h1 {
 }
 
 .elr-flipper-back {
-  background-color: pink;
+  background-color: #ffc0cb;
   width: 200px;
   height: 200px;
   border-radius: 100px;
-  color: white;
+  color: #fff;
   text-align: center;
   line-height: 200px;
 }
@@ -242,21 +242,21 @@ h1 {
   width: 200px;
 
   h4 {
-    background-color: royalblue;
+    background-color: #4169e1;
     padding: 10px;
-    color: white;
+    color: #fff;
     border-radius: 5px;
     margin-bottom: 5px;
     transition: background-color 0.3s;
 
     &:hover {
-      background-color: lighten(royalblue, 10%);
+      background-color: lighten(#4169e1, 10%);
     }
   }
 
   .drop-list {
-    background-color: royalblue;
-    color: white;
+    background-color: #4169e1;
+    color: #fff;
     list-style: none;
     margin: 0;
     padding: 0;
