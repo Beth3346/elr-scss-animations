@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/Beth3346/elr-scss-animations.svg?branch=master)](https://travis-ci.org/Beth3346/elr-scss-animations)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![npm](https://img.shields.io/npm/dm/elr-scss-animations.svg?style=flat)]()
+[![npm](https://img.shields.io/npm/dm/elr-scss-animations.svg?style=flat)](https://npmjs.com/package/elr-scss-animations)
 
 - Scss Mixin library for animations
 
@@ -12,9 +12,6 @@ Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't 
 
 ```sh
 npm install elr-scss-animations --save
-```
-
-```sh
 yarn add elr-scss-animations
 ```
 
