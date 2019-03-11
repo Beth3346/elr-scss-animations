@@ -7,20 +7,33 @@
   <!--<![endif]-->
 
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Animated Icons Demo | ELR CSS Utilities</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/animations.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+      integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
 
   <body>
-    <!--[if lt IE 7]> <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p> <![endif]-->
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
     <div class="wrapper">
       <div class="content-holder">
         <h1>Animations</h1>
@@ -64,16 +77,19 @@
       </div>
     </div>
     <script>
-      $('.slide-down').on('click', function () {
-        $(this).find('.elr-slide').toggleClass('active');
+      $('.slide-down').on('click', function() {
+        $(this)
+          .find('.elr-slide')
+          .toggleClass('active');
       });
-      $('.slide-down').find('.elr-slide').on('click', function (e) {
-        e.stopPropagation()
-      });
-      $('.js-flipper-container').on('click', function () {
+      $('.slide-down')
+        .find('.elr-slide')
+        .on('click', function(e) {
+          e.stopPropagation();
+        });
+      $('.js-flipper-container').on('click', function() {
         $(this).toggleClass('active');
       });
     </script>
   </body>
-
 </html>
