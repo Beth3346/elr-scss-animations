@@ -9,13 +9,13 @@
   },
   "devDependencies": {
     "browser-sync": "^2.26.3",
-    "del": "^3.0.0",
+    "del": "^4.1.1",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-clean-css": "^4.0.0",
     "gulp-plumber": "^1.2.0",
     "gulp-sass": "^4.0.1",
-    "husky": "^1.0.0-rc.2",
+    "husky": "^2.2.0",
     "node-sass": "^4.5.0",
     "path": "^0.12.7"
   },
