@@ -1,9 +1,7 @@
-@import 'node_modules/elr-scss-functions/main';
-
 @mixin elr-slide($config: ()) {
   $config: extend(
     (
-      final-height: 500px
+      final-height: 500px,
     ),
     $config
   );
