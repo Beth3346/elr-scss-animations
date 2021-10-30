@@ -13,6 +13,7 @@
 /.travis.yml
 /.git
 /.scss-lint.yml
+/.husky
 
 /build
 /speed
