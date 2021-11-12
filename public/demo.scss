@@ -1,0 +1,64 @@
+@import "src/main";
+@import "elr-scss-reset/src/main";
+
+@include elr-reset;
+
+.wrapper {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.main-heading {
+  font-size: 36px;
+  font-weight: 700;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.subheading {
+  font-size: 16px;
+  color: #666;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.demo-content {
+  position: relative;
+  padding: 20px 0;
+}
+
+.elr-spin {
+  @include elr-spin;
+}
+
+.elr-spin-4s {
+  @include elr-spin(
+    $config: (
+      speed: 4s,
+    )
+  );
+}
+
+.elr-slide {
+  @include elr-slide;
+}
+
+.elr-fade-out {
+  @include elr-fade();
+}
+
+.elr-fade-in {
+  @include elr-fade(
+    $config: (
+      type: show,
+    )
+  );
+}
+
+.elr-flipper {
+  @include elr-flipper;
+}
