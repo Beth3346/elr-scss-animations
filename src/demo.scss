@@ -1,5 +1,6 @@
 @import "src/main";
 @import "elr-scss-reset/src/main";
+@import "elr-scss-config/src/main";
 
 @include elr-reset;
 
@@ -16,15 +17,15 @@
 .main-heading {
   font-size: 36px;
   font-weight: 700;
-  border-bottom: 1px solid #ccc;
+  border-bottom: $border;
   padding-bottom: 5px;
   margin-bottom: 10px;
   width: 100%;
 }
 
 .subheading {
-  font-size: 16px;
-  color: #666;
+  font-size: $base-fontsize * 1.25;
+  color: $primary-color;
   padding-bottom: 5px;
   margin-bottom: 10px;
   width: 100%;
@@ -33,6 +34,102 @@
 .demo-content {
   position: relative;
   padding: 20px 0;
+}
+
+.demo-box {
+  position: relative;
+  background-color: $primary-color;
+  padding: 20px;
+  margin: 20px;
+  z-index: 0;
+
+  > p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $white;
+    z-index: 1;
+  }
+
+  .elr-fade-item {
+    position: relative;
+    z-index: 2;
+    background-color: $white;
+    color: $primary-color;
+  }
+}
+
+.circle {
+  background-color: $primary-color;
+  color: $white;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  text-align: center;
+  line-height: 200px;
+  margin: 20px;
+}
+
+.elr-flipper-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+
+.elr-flipper-front {
+  color: $white;
+  background-color: $primary-color;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  text-align: center;
+  line-height: 200px;
+}
+
+.elr-flipper-back {
+  background-color: $secondary-color;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  color: $white;
+  text-align: center;
+  line-height: 200px;
+}
+
+.slide-down {
+  cursor: pointer;
+  width: 200px;
+  position: relative;
+
+  h4 {
+    background-color: $primary-color;
+    padding: 10px;
+    color: $white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: lighten($primary-color, 10%);
+    }
+  }
+
+  .drop-list {
+    background-color: $secondary-color;
+    color: $white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    position: absolute;
+    width: 200px;
+    z-index: 1;
+
+    li {
+      padding: 5px 10px;
+    }
+  }
 }
 
 .elr-spin {

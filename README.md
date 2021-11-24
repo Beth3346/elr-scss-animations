@@ -52,6 +52,20 @@ the elr-fade mixin shows and hides an element on hover.
 
 ### elr-spin
 
+```scss
+.elr-spin-4s {
+  @include elr-spin(
+    $config: (
+      speed: 4s,
+    )
+  );
+}
+```
+
+```html
+<div class="circle elr-spin-4s">Spinning Faster!</div>
+```
+
 ### elr-flipper
 
 - The elr-flipper mixin adds an 'active' class to an element to create a 'flip' effect.

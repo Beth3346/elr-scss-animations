@@ -1,5 +1,7 @@
 @import "elr-scss-functions/src/main";
 
+// TODO: add spin direction
+
 @mixin elr-spin($config: ()) {
   $config: extend(
     (
@@ -111,6 +113,8 @@
     transform: rotateY(-180deg);
   }
 }
+
+// TODO: add slide directions (down, up, left, right)
 
 @mixin elr-slide($config: ()) {
   $config: extend(
