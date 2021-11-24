@@ -20,3 +20,5 @@
 /test
 /Gruntfile.js
 /gulpfile.js
+/.github
+/.parcel-cache
