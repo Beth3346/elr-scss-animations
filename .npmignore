@@ -22,3 +22,5 @@
 /gulpfile.js
 /.github
 /.parcel-cache
+/.netlify
+/dist
