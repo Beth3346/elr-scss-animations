@@ -37,7 +37,7 @@
   $type: map-get($config, type);
   $speed: map-get($config, speed);
 
-  > .elr-fade-item {
+  > .fade-item {
     transition: visibility $speed, opacity $speed;
     @if ($type == "show") {
       visibility: hidden;
@@ -50,7 +50,7 @@
 
   &.active,
   &:hover {
-    > .elr-fade-item {
+    > .fade-item {
       @if ($type == "hide") {
         visibility: hidden;
         opacity: 0;
@@ -70,46 +70,55 @@
   transition: 0.6s;
   transform-style: preserve-3d;
   position: relative;
+  cursor: pointer;
 
   // entire container, keeps perspective
-  .elr-flipper-container {
+  .flipper-container {
     perspective: 1000;
     transform-style: preserve-3d;
+    background: transparent;
+    border: 0;
+
+    &:hover {
+      background: transparent;
+    }
 
     //  UPDATED! flip the pane when hovered
     &.active {
-      .elr-flipper-back {
+      .flipper-back {
         transform: rotateY(0deg);
       }
 
-      .elr-flipper-front {
+      .flipper-front {
         transform: rotateY(180deg);
       }
     }
   }
 
   // hide back of pane during swap
-  .elr-flipper-front,
-  .elr-flipper-back {
+  .flipper-front,
+  .flipper-back {
     backface-visibility: hidden;
     transition: 0.6s;
     transform-style: preserve-3d;
     position: absolute;
     top: 0;
     left: 0;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
   }
 
   //  UPDATED! front pane, placed above back
-  .elr-flipper-front {
+  .flipper-front {
     z-index: 2;
     transform: rotateY(0deg);
   }
 
   // back, initially hidden pane
-  .elr-flipper-back {
+  .flipper-back {
     transform: rotateY(-180deg);
   }
 }

@@ -57,7 +57,7 @@
     z-index: 1;
   }
 
-  .elr-fade-item {
+  .fade-item {
     position: relative;
     z-index: 2;
     background-color: $white;
@@ -77,13 +77,13 @@
   color: $white;
 }
 
-.elr-flipper-container {
+.flipper-container {
   width: 200px;
   height: 200px;
   border-radius: 100px;
 }
 
-.elr-flipper-front {
+.flipper-front {
   color: $white;
   background-color: $primary-color;
   width: 200px;
@@ -97,7 +97,7 @@
   }
 }
 
-.elr-flipper-back {
+.flipper-back {
   background-color: $secondary-color;
   width: 200px;
   height: 200px;
@@ -116,41 +116,43 @@
   width: 200px;
   position: relative;
 
-  h4 {
+  button {
+    display: block;
     background-color: $primary-color;
     padding: 10px;
     color: $white;
     border-radius: 5px;
-    margin-bottom: 5px;
+    border: 0;
     transition: background-color 0.3s;
 
     &:hover {
       background-color: lighten($primary-color, 10%);
     }
   }
+}
 
-  .drop-list {
-    background-color: $secondary-color;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    border-radius: 5px;
-    position: absolute;
-    width: 200px;
-    z-index: 1;
+.drop-list {
+  background-color: $secondary-color;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  position: absolute;
+  top: 64px;
+  width: 200px;
+  z-index: 1;
 
-    li {
-      padding: 5px 10px;
-      color: $white;
-    }
+  li {
+    padding: 5px 10px;
+    color: $white;
   }
 }
 
-.elr-spin {
+.spin {
   @include elr-spin;
 }
 
-.elr-spin-4s {
+.spin-4s {
   @include elr-spin(
     $config: (
       speed: 4s,
@@ -158,15 +160,15 @@
   );
 }
 
-.elr-slide {
+.slide {
   @include elr-slide;
 }
 
-.elr-fade-out {
+.fade-out {
   @include elr-fade();
 }
 
-.elr-fade-in {
+.fade-in {
   @include elr-fade(
     $config: (
       type: show,
@@ -174,6 +176,6 @@
   );
 }
 
-.elr-flipper {
+.flipper {
   @include elr-flipper;
 }

@@ -1,11 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
 <html lang="en-US">
-  <!--<![endif]-->
-
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -27,23 +21,17 @@
   </head>
 
   <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
     <div class="wrapper">
       <div class="content-holder">
         <h1 class="main-heading">Animations</h1>
         <div class="demo-content">
-          <div class="circle elr-spin">Spinning!</div>
-          <div class="circle elr-spin-4s">Spinning Faster!</div>
+          <div class="circle spin">Spinning!</div>
+          <div class="circle spin-4s">Spinning Faster!</div>
         </div>
         <div class="demo-content">
-          <div class="slide-down">
-            <h4>Slide Down</h4>
-            <ul class="drop-list elr-slide">
+          <div>
+            <button class="slide-down">Slide Down</button>
+            <ul class="drop-list slide">
               <li>Item One</li>
               <li>Item Two</li>
               <li>Item Three</li>
@@ -52,25 +40,25 @@
           </div>
         </div>
         <div class="demo-content">
-          <div class="demo-box elr-fade-out">
-            <div class="elr-fade-item circle">Fade Out</div>
+          <div class="demo-box fade-out">
+            <div class="fade-item circle">Fade Out</div>
             <p>Hello!</p>
           </div>
-          <div class="demo-box elr-fade-in">
-            <div class="elr-fade-item circle">Fade In</div>
+          <div class="demo-box fade-in">
+            <div class="fade-item circle">Fade In</div>
             <p>Hover</p>
           </div>
         </div>
         <div class="demo-content">
-          <div class="elr-flipper">
-            <div class="elr-flipper-container js-flipper-container">
-              <div class="elr-flipper-front">
+          <div class="flipper">
+            <button class="flipper-container js-flipper-container">
+              <div class="flipper-front">
                 <p>Click Me!</p>
               </div>
-              <div class="elr-flipper-back">
+              <div class="flipper-back">
                 <p>Here is some content.</p>
               </div>
-            </div>
+            </button>
           </div>
         </div>
       </div>
@@ -78,11 +66,12 @@
     <script>
       $('.slide-down').on('click', function() {
         $(this)
-          .find('.elr-slide')
+          .parent()
+          .find('.slide')
           .toggleClass('active');
       });
       $('.slide-down')
-        .find('.elr-slide')
+        .find('.slide')
         .on('click', function(e) {
           e.stopPropagation();
         });
