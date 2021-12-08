@@ -6,6 +6,7 @@
 [![npm](https://img.shields.io/npm/dm/elr-scss-animations.svg?style=flat)](https://npmjs.com/package/elr-scss-animations)
 [![last commit](https://img.shields.io/github/last-commit/Beth3346/elr-scss-animations.svg)](https://github.com/Beth3346/elr-scss-animations)
 [![last commit](https://img.shields.io/github/last-commit/Beth3346/elr-scss-animations.svg)](https://github.com/Beth3346/elr-scss-animations)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7ff483a2-267c-4901-9710-5f6a3e1d8186/deploy-status)](https://app.netlify.com/sites/elr-animations/deploys)
 
 - Scss Mixin library for animations
 
