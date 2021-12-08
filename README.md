@@ -1,7 +1,10 @@
-# elr-scss-animations
+# Animations
 
+[![npm version](http://img.shields.io/npm/v/elr-scss-animations.svg)](https://www.npmjs.org/package/elr-scss-animations)
+[![Build Status](https://github.com/elr-scss-animations/workflows/CI/badge.svg)](https://github.com/elr-scss-animations/actions?workflow=CI)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![npm](https://img.shields.io/npm/dm/elr-scss-animations.svg?style=flat)](https://npmjs.com/package/elr-scss-animations)
+[![last commit](https://img.shields.io/github/last-commit/Beth3346/elr-scss-animations.svg)](https://github.com/Beth3346/elr-scss-animations)
 
 - Scss Mixin library for animations
 
@@ -10,7 +13,12 @@
 Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't already.
 
 ```sh
-npm install elr-scss-animations --save
+npm install elr-scss-animations
+```
+
+or
+
+```sh
 yarn add elr-scss-animations
 ```
 
@@ -21,7 +29,7 @@ yarn add elr-scss-animations
 the elr-fade mixin shows and hides an element on hover.
 
 ```scss
-@import "~elr-scss-animations/src/fade";
+@import "elr-scss-animations/src/main";
 
 .elr-fade-out {
   @include elr-fade();
@@ -73,7 +81,7 @@ the elr-fade mixin shows and hides an element on hover.
 - You must implement the active class toggle event yourself using JavaScript
 
 ```scss
-@import "~elr-scss-animations/src/flipper";
+@import "elr-scss-animations/src/main";
 
 .elr-flipper {
   @include elr-flipper;
